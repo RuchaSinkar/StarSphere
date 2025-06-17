@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@500&family=Space+Grotesk:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&family=Orbitron:wght@700&family=Rajdhani:wght@500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="leaderboard-page">
+    <header>
+        <h1 id="heading">StarSphere</h1>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars" id="hamburger"></i>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="anchor">Home</a>
+                <a href="leaderboard.html" class="anchor">Leaderboard</a>
+                <a href="quiz.html" class="anchor">Quiz</a>
+                <a href="facts.html" class="anchor">Facts</a>
+                <a href="login.html" class="anchor">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main-leaderboard">
+        <section class="section-leaderboard">
+            <h2 id="heading-leader">Leaderboard</h2>
+            <table class="leaderboard-table">
+            <thead>
+                <tr>
+                <th>Rank</th>
+                <th>Player</th>
+                <th>Score</th>
+                </tr>
+            </thead>
+            <tbody id="leaderboard-body">
+                <!-- Leaderboard rows will be added here -->
+            </tbody>
+            </table>
+            <button id="clear-leaderboard-btn">Clear Leaderboard</button>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+    </body>
+</html>
